@@ -25,7 +25,10 @@ and then start a jupyter notebook with
 ```bash
 jupyter notebook notebooks/ssd_notebook.ipynb
 ```
+## Environment
 
+tensorflow-gpu==1.13.1
+keras==2.2.4
 
 ## Datasets
 
@@ -167,3 +170,7 @@ python train_ssd_network.py \
 ```
 
 A number of pre-trained weights of popular deep architectures can be found on [TF-Slim models page](https://github.com/tensorflow/models/tree/master/slim).
+
+## CKPT model get TF saved model
+
+run python ckpt_sdk.py get tensorflow of saved model, then model to LT SDK model convert.
