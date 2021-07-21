@@ -1,0 +1,88 @@
+
+# =========================================================================== #
+# Training | Evaluation flags:
+# =========================================================================== #
+{'batch_size': <absl.flags._flag.Flag object at 0x7fead6f39cd0>,
+ 'checkpoint_path': <absl.flags._flag.Flag object at 0x7fead6f3f250>,
+ 'dataset_dir': <absl.flags._flag.Flag object at 0x7fead6f3f610>,
+ 'dataset_name': <absl.flags._flag.Flag object at 0x7fead6f3f490>,
+ 'dataset_split_name': <absl.flags._flag.Flag object at 0x7fead6f3f550>,
+ 'eval_dir': <absl.flags._flag.Flag object at 0x7fead6f3f310>,
+ 'eval_image_size': <absl.flags._flag.Flag object at 0x7fead6f39e90>,
+ 'eval_resize': <absl.flags._flag.Flag object at 0x7fead6f39dd0>,
+ 'gpu_memory_fraction': <absl.flags._flag.Flag object at 0x7fead6f3f850>,
+ 'h': <tensorflow.python.platform.app._HelpFlag object at 0x7fead6f3f910>,
+ 'help': <tensorflow.python.platform.app._HelpFlag object at 0x7fead6f3f910>,
+ 'helpfull': <tensorflow.python.platform.app._HelpfullFlag object at 0x7fead6f3f990>,
+ 'helpshort': <tensorflow.python.platform.app._HelpshortFlag object at 0x7fead6f3fa10>,
+ 'keep_top_k': <absl.flags._flag.Flag object at 0x7fead6f341d0>,
+ 'master': <absl.flags._flag.Flag object at 0x7fead6f3f190>,
+ 'matching_threshold': <absl.flags._flag.Flag object at 0x7fead6f39c90>,
+ 'max_num_batches': <absl.flags._flag.Flag object at 0x7fead6f3f110>,
+ 'model_name': <absl.flags._flag.Flag object at 0x7fead6f3f690>,
+ 'moving_average_decay': <absl.flags._flag.Flag object at 0x7fead6f3f7d0>,
+ 'nms_threshold': <absl.flags._flag.Flag object at 0x7fead6f34e90>,
+ 'num_classes': <absl.flags._flag.Flag object at 0x7fead6f39fd0>,
+ 'num_preprocessing_threads': <absl.flags._flag.Flag object at 0x7fead6f3f3d0>,
+ 'preprocessing_name': <absl.flags._flag.Flag object at 0x7fead6f3f750>,
+ 'remove_difficult': <absl.flags._flag.BooleanFlag object at 0x7fead6f39ed0>,
+ 'select_threshold': <absl.flags._flag.Flag object at 0x7feadad53e90>,
+ 'select_top_k': <absl.flags._flag.Flag object at 0x7fead6facf10>,
+ 'wait_for_checkpoints': <absl.flags._flag.BooleanFlag object at 0x7fead6f3f890>}
+
+# =========================================================================== #
+# SSD net parameters:
+# =========================================================================== #
+{'anchor_offset': 0.5,
+ 'anchor_ratios': [[2, 0.5],
+                   [2, 0.5, 3, 0.3333333333333333],
+                   [2, 0.5, 3, 0.3333333333333333],
+                   [2, 0.5, 3, 0.3333333333333333],
+                   [2, 0.5],
+                   [2, 0.5]],
+ 'anchor_size_bounds': [0.15, 0.9],
+ 'anchor_sizes': [(21.0, 45.0),
+                  (45.0, 99.0),
+                  (99.0, 153.0),
+                  (153.0, 207.0),
+                  (207.0, 261.0),
+                  (261.0, 315.0)],
+ 'anchor_steps': [8, 16, 32, 64, 100, 300],
+ 'feat_layers': ['block4', 'block7', 'block8', 'block9', 'block10', 'block11'],
+ 'feat_shapes': [(38, 38), (19, 19), (10, 10), (5, 5), (3, 3), (1, 1)],
+ 'img_shape': (300, 300),
+ 'no_annotation_label': 21,
+ 'normalizations': [20, -1, -1, -1, -1, -1],
+ 'num_classes': 21,
+ 'prior_scaling': [0.1, 0.1, 0.2, 0.2]}
+
+# =========================================================================== #
+# Training | Evaluation dataset files:
+# =========================================================================== #
+['./datasets/tfrecords/voc_2012_test_000.tfrecord',
+ './datasets/tfrecords/voc_2012_test_001.tfrecord',
+ './datasets/tfrecords/voc_2012_test_002.tfrecord',
+ './datasets/tfrecords/voc_2012_test_003.tfrecord',
+ './datasets/tfrecords/voc_2012_test_004.tfrecord',
+ './datasets/tfrecords/voc_2012_test_005.tfrecord',
+ './datasets/tfrecords/voc_2012_test_006.tfrecord',
+ './datasets/tfrecords/voc_2012_test_007.tfrecord',
+ './datasets/tfrecords/voc_2012_test_008.tfrecord',
+ './datasets/tfrecords/voc_2012_test_009.tfrecord',
+ './datasets/tfrecords/voc_2012_test_010.tfrecord',
+ './datasets/tfrecords/voc_2012_test_011.tfrecord',
+ './datasets/tfrecords/voc_2012_test_012.tfrecord',
+ './datasets/tfrecords/voc_2012_test_013.tfrecord',
+ './datasets/tfrecords/voc_2012_test_014.tfrecord',
+ './datasets/tfrecords/voc_2012_test_015.tfrecord',
+ './datasets/tfrecords/voc_2012_test_016.tfrecord',
+ './datasets/tfrecords/voc_2012_test_017.tfrecord',
+ './datasets/tfrecords/voc_2012_test_018.tfrecord',
+ './datasets/tfrecords/voc_2012_test_019.tfrecord',
+ './datasets/tfrecords/voc_2012_test_020.tfrecord',
+ './datasets/tfrecords/voc_2012_test_021.tfrecord',
+ './datasets/tfrecords/voc_2012_test_022.tfrecord',
+ './datasets/tfrecords/voc_2012_test_023.tfrecord',
+ './datasets/tfrecords/voc_2012_test_024.tfrecord',
+ './datasets/tfrecords/voc_2012_test_025.tfrecord']
+
